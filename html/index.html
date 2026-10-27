@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel ou Tesoura</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <img src="https://avatars.githubusercontent.com/u/289055127?s=400&u=c3fdc49cbe6b0610e2e306190549bbfcc05530c5&v=4" alt="Logo" class="logo">
+
+    <div class="container">
+        <div class="content">
+            <h2>Pra ganhar é preciso arriscar!</h2>
+            
+            <div id="area-idade">
+                <p>Digite sua idade para começar:</p>
+                <input type="number" id="input-idade" placeholder="Sua idade">
+                <button onclick="verificarIdade()">Confirmar</button>
+            </div>
+
+            <div id="area-jogo" style="display: none;">
+                <p>PEDRA, PAPEL ou TESOURA?</p>
+                <div class="botoes-jogo">
+                    <button onclick="jogar(1)">🧱 Pedra</button>
+                    <button onclick="jogar(2)">📄 Papel</button>
+                    <button onclick="jogar(3)">✂️ Tesoura</button>
+                </div>
+            </div>
+
+            <p id="mensagem" style="margin-top: 20px; font-weight: bold;"></p>
+        </div>
+    </div>
+    
+    <footer>Jogo de Pedra, Papel ou Tesoura em JS</footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
